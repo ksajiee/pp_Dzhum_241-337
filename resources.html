@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Участники проекта | INVADE</title>
+  <link rel="stylesheet" href="style/css.css">
+</head>
+<body>
+
+  <!-- Хедер -->
+  <header class="header-team">
+    <div class="top-panel">
+      <a href="index.html"><img src="media/logo.png" alt="INVADE"></a>
+      <div class="social-icons">
+        <a href="#"><img src="media/telegram-icon.png" alt="Telegram"></a>
+        <a href="#"><img src="media/vk-icon.png" alt="VK"></a>
+      </div>
+    </div>
+    <div class="center-text">
+      <h1>Ресурсы</h1>
+      <p>Сайт заказчика и инструменты разработки</p>
+    </div>
+  </header>
+
+  <!-- Основной блок -->
+  <section class="main-section visible">
+    <div style="background-color: rgba(50,50,50,0.85); padding: 40px; border-radius: 25px; max-width: 900px; margin: 0 auto; text-align: left; box-shadow: 0 0 30px rgba(0,0,0,0.5);">
+      <h2 style="text-align: center; font-size: 3rem; margin-bottom: 30px;">Ссылки</h2>
+      <ul style="list-style: none; padding: 0; font-size: 1.5rem;">
+        <li style="margin-bottom: 5px;"><a style="color:#dcf0fa;" href="https://mospolytech.ru/" target="_blank">Сайт заказчика: Московский политехнический университет</a></li>
+        <li style="margin-bottom: 5px;"><a style="color:#dcf0fa;" href="https://unity.com/" target="_blank">Инструмент разработки: Unity</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Кнопка возврата -->
+  <div class="main_page-team">
+    <a class="play-button" href="index.html">Главная страница</a>
+  </div>
+
+  <!-- Футер -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <img src="media/logo.png" alt="INVADE Logo" class="footer-logo">
+          <p>INVADE - научно-фантастическая 3D-игра с захватывающим геймплеем и передовыми технологиями.</p>
+          <div class="footer-social">
+            <a href="#"><img src="media/telegram-icon.png" alt="Telegram"></a>
+            <a href="#"><img src="media/vk-icon.png" alt="VK"></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h3>Навигация</h3>
+          <ul>
+            <li><a href="about.html">О проекте</a></li>
+            <li><a href="jurnal.html">Этапы разработки</a></li>
+          </ul>
+        </div>
+        <div class="footer-contacts">
+          <h3>Контакты</h3>
+          <ul>
+            <li>invade.game@example.com</li>
+            <li>Москва, Россия</li>
+          </ul>
+        </div>
+        <div class="footer-subscribe">
+          <h3>Ввести код</h3>
+          <form class="subscribe-form">
+            <input type="text" id="secretCode" placeholder="Ваш код" required>
+            <button type="button" onclick="checkCode()">Отправить</button>
+          </form>
+          <div id="codeMessage"></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="copyright">
+          &copy; 2025 INVADE Game. Все права защищены.
+        </div>
+        <div class="legal-links">
+          <a href="#">Политика конфиденциальности</a>
+          <a href="#">Условия использования</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function checkCode() {
+      const input = document.getElementById('secretCode');
+      const message = document.getElementById('codeMessage');
+      if (input.value.trim() === "Invade") {
+        message.innerHTML = "<strong>Поздравляем! Вы нашли пасхалку! 🎉</strong>";
+        message.style.color = "#32CD32";
+      } else {
+        message.innerHTML = "Код неверный, попробуйте еще раз";
+        message.style.color = "#ff5555";
+      }
+    }
+  </script>
+</body>
+</html>
