@@ -70,7 +70,9 @@ mygit_project/
 - Добавление удалённых репозиториев (fetch/push)
 
 ## 🚀 Быстрый старт
+```
 python3 mygit.py init
 echo "Hello Git" > hello.txt
 python3 mygit.py hash-object hello.txt
 python3 mygit.py commit "Добавлен hello.txt"
+```
